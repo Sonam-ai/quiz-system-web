@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Your Score: {{ score }}/{{ total }} ({{ "%.1f"|format(score/total*100) }}%)</h1>
+        <h2>Details:</h2>
+        <ul class="results">
+            {% for question, user_ans, correct, is_correct in results %}
+                <li class="{% if is_correct %}correct{% else %}wrong{% endif %}">
+                    <strong>{{ question }}</strong><br>
+                    Your answer: {{ user_ans }}<br>
+                    Correct: {{ correct }}<br>
+                    {% if is_correct %}✅ Correct{% else %}❌ Wrong{% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+        <a href="/" class="btn">Take Quiz Again</a>
+    </div>
+</body>
+</html>
+    
