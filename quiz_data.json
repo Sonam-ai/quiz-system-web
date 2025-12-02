@@ -1,0 +1,29 @@
+     [
+    {
+        "question": "What does OOP stand for in software engineering?",
+        "options": ["Object-Oriented Programming", "Open-Source Operating Protocol", "Optimized Output Process", "Online Object Platform"],
+        "answer": 0
+    },
+    {
+        "question": "Which version control system is commonly used for collaborative software development?",
+        "options": ["Git", "Docker", "Jenkins", "Kubernetes"],
+        "answer": 0
+    },
+    {
+        "question": "In the Agile methodology, what is a 'Sprint'?",
+        "options": ["A type of bug", "A fixed time period for completing work", "A programming language", "A database query"],
+        "answer": 1
+    },
+    {
+        "question": "What is the primary purpose of unit testing in software development?",
+        "options": ["To test the entire application at once", "To verify individual components or functions", "To deploy code to production", "To design user interfaces"],
+        "answer": 1
+    },
+    {
+        "question": "Which data structure uses LIFO (Last In, First Out) principle?",
+        "options": ["Queue", "Stack", "Array", "Linked List"],
+        "answer": 1
+    }
+]
+
+     
